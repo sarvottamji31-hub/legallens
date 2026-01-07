@@ -26,3 +26,13 @@
 <footer>Restricted access</footer>
 </body>
 </html>
+<textarea id="content" placeholder="Add judgment content"></textarea>
+<button onclick="save()">Save</button>
+
+<script>
+function save(){
+ localStorage.setItem("judgment", 
+  document.getElementById("content").value);
+ alert("Saved (CMS ready)");
+}
+</script>
