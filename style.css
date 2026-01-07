@@ -108,3 +108,491 @@ footer {
   padding: 18px;
   color: #555;
 }
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+/* Header */
+.topbar {
+  background: #0f2a44;
+  color: white;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Exam Cards */
+.exam-track {
+  display: flex;
+  gap: 14px;
+  padding: 18px;
+  overflow-x: auto;
+}
+
+.exam-card {
+  background: white;
+  padding: 16px;
+  border-radius: 16px;
+  min-width: 180px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.days { font-size: 22px; font-weight: 700; }
+.green .days { color: #16a34a; }
+.red .days { color: #dc2626; }
+.blue .days { color: #2563eb; }
+
+/* Hero */
+.hero-banner {
+  margin: 20px;
+  padding: 40px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #2563eb, #0f2a44);
+  color: white;
+  text-align: center;
+}
+
+/* Search */
+.search-box { padding: 0 20px; }
+.search-box input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 16px;
+  padding: 20px;
+}
+
+.feature {
+  background: white;
+  padding: 22px;
+  border-radius: 16px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.feature a { text-decoration: none; color: inherit; }
+
+/* Footer */
+footer {
+  background: #0f2a44;
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+
+/* DARK MODE */
+.dark {
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+.dark .exam-card,
+.dark .feature {
+  background: #111827;
+  color: #e5e7eb;
+}
+
+.dark .topbar,
+.dark footer {
+  background: #020617;
+}
+
+.dark .hero-banner {
+  background: linear-gradient(135deg,#1e293b,#020617);
+}
+
+.dark-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: white;
+}
+
+.feature {
+ transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.feature:hover {
+ transform: translateY(-6px) scale(1.03);
+ box-shadow: 0 12px 30px rgba(0,0,0,.15);
+}
+
+.exam-card {
+ animation: fadeUp .6s ease;
+}
+
+@keyframes fadeUp {
+ from {opacity:0; transform:translateY(20px);}
+ to {opacity:1; transform:none;}
+}
+/* Statutory Hero */
+.stat-hero {
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg,#7c3aed,#2563eb);
+  border-radius: 0 0 40px 40px;
+}
+
+/* Categories */
+.stat-categories {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 14px;
+  padding: 20px;
+}
+
+.cat {
+  padding: 18px;
+  border-radius: 16px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+.criminal { background:#ef4444; }
+.civil { background:#3b82f6; }
+.constitution { background:#8b5cf6; }
+.commercial { background:#10b981; }
+.labour { background:#f59e0b; }
+.family { background:#ec4899; }
+
+/* Act Cards */
+.stat-acts {
+  padding: 20px;
+  display: grid;
+  gap: 18px;
+}
+
+.act-card {
+  padding: 22px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.act-card span {
+  display: inline-block;
+  margin-top: 10px;
+  background: rgba(255,255,255,.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.red { background:linear-gradient(135deg,#dc2626,#ef4444); }
+.blue { background:linear-gradient(135deg,#2563eb,#3b82f6); }
+.green { background:linear-gradient(135deg,#059669,#10b981); }
+.purple { background:linear-gradient(135deg,#7c3aed,#8b5cf6); }
+
+/* Section Preview */
+.section-preview {
+  padding: 30px 20px;
+}
+
+.section-card {
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,.08);
+}
+
+/* Hover Effects */
+.act-card, .cat {
+  transition: transform .3s ease;
+}
+
+.act-card:hover, .cat:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+/* MCQ Hero */
+.mcq-hero {
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #ec4899, #8b5cf6);
+  border-radius: 0 0 40px 40px;
+}
+
+/* MCQ Grid */
+.mcq-grid {
+  padding: 24px;
+  display: grid;
+  gap: 18px;
+}
+
+/* MCQ Cards */
+.mcq-card {
+  padding: 24px;
+  border-radius: 22px;
+  color: white;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.mcq-card span {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 14px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.mcq-card:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+/* Color Themes */
+.ipc {
+  background: linear-gradient(135deg, #ef4444, #f97316);
+}
+
+.constitution {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.crpc {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.evidence {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+.contract {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.misc {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+}
+/* ===== FUNKY INNER PAGES SYSTEM ===== */
+
+.inner-hero {
+  margin: 20px;
+  padding: 50px 24px;
+  border-radius: 24px;
+  color: white;
+  text-align: center;
+  background: linear-gradient(135deg, #2563eb, #0f2a44);
+}
+
+.inner-hero.purple {
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+}
+
+.inner-hero.pink {
+  background: linear-gradient(135deg, #ec4899, #8b5cf6);
+}
+
+.inner-hero.orange {
+  background: linear-gradient(135deg, #f97316, #ef4444);
+}
+
+.inner-hero h1 {
+  margin: 0 0 8px;
+  font-size: 26px;
+}
+
+.inner-hero p {
+  opacity: 0.9;
+  font-size: 15px;
+}
+
+/* Card Grid */
+.funky-grid {
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* Funky Cards */
+.funky-card {
+  background: white;
+  padding: 22px;
+  border-radius: 18px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.funky-card span {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+.funky-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+}
+
+/* MCQ Options */
+.mcq-options {
+  padding: 24px;
+  display: grid;
+  gap: 14px;
+}
+
+.mcq-option {
+  padding: 14px;
+  border-radius: 14px;
+  background: white;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 6px 14px rgba(0,0,0,.1);
+  cursor: pointer;
+}
+
+.mcq-option.correct {
+  background: #16a34a;
+  color: white;
+}
+
+.mcq-option.wrong {
+  background: #dc2626;
+  color: white;
+}
+/* ===== PAGE TRANSITION ANIMATION ===== */
+
+body {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+body.page-exit {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Optional smoother effect */
+a {
+  transition: color 0.2s ease;
+}
+/* ===== UNIVERSAL FUNKY INTERFACE ===== */
+
+.funky-hero {
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+  border-radius: 0 0 40px 40px;
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+}
+
+.funky-hero h1 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.funky-hero p {
+  opacity: 0.9;
+  font-size: 15px;
+}
+
+/* Search */
+.funky-search {
+  padding: 16px;
+}
+
+.funky-search input {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: none;
+  box-shadow: 0 6px 14px rgba(0,0,0,.1);
+  font-size: 14px;
+}
+
+/* Category Chips */
+.funky-chips {
+  padding: 10px 16px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 12px;
+}
+
+.chip {
+  padding: 14px;
+  border-radius: 14px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+
+.red { background:#ef4444; }
+.blue { background:#3b82f6; }
+.green { background:#10b981; }
+.purple { background:#8b5cf6; }
+.orange { background:#f59e0b; }
+.pink { background:#ec4899; }
+
+/* Big Cards */
+.funky-list {
+  padding: 20px;
+  display: grid;
+  gap: 18px;
+}
+
+.funky-card {
+  padding: 22px;
+  border-radius: 22px;
+  color: white;
+  box-shadow: 0 12px 30px rgba(0,0,0,.15);
+  transition: transform .3s ease;
+}
+
+.funky-card span {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: rgba(255,255,255,.25);
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.funky-card:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+/* Popular Sections / Items */
+.simple-list {
+  padding: 20px;
+}
+
+.simple-item {
+  background: white;
+  padding: 16px;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,.08);
+}
+/* Fix for new Indian laws text visibility */
+.dark-text {
+  color: #000000;
+}
+
+.dark-text span {
+  background: rgba(0, 0, 0, 0.1);
+  color: #000000;
+}
