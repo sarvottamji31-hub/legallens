@@ -1,0 +1,110 @@
+/* ===== RESET ===== */
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f5f6fb;
+  color: #111;
+}
+
+/* ===== TOP BAR ===== */
+.topbar {
+  background: #0f2a44;
+  color: white;
+  padding: 14px 18px;
+  font-size: 18px;
+}
+
+/* ===== BOX SYSTEM ===== */
+.box {
+  margin: 14px 16px;
+  padding: 22px;
+  border-radius: 22px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+  transition: transform .25s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== HERO ===== */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  color: white;
+}
+
+/* ===== GRID ===== */
+.grid {
+  display: grid;
+  gap: 12px;
+  padding: 0 16px;
+}
+.grid.two { grid-template-columns: repeat(2,1fr); }
+
+/* ===== ICON SYSTEM ===== */
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  font-size: 24px;
+  margin-right: 12px;
+  background: rgba(255,255,255,0.3);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.icon.big {
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+}
+
+.box:hover .icon {
+  transform: scale(1.2) rotate(-8deg);
+  box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+
+/* ===== TEXT ===== */
+.box h3 { margin: 8px 0 4px; }
+.box p { margin: 0; opacity: .9; }
+
+.box span {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  background: rgba(255,255,255,0.25);
+}
+
+/* ===== COLORS ===== */
+.red { background:#ef4444; color:white }
+.blue { background:#3b82f6; color:white }
+.green { background:#10b981; color:white }
+.purple { background:#8b5cf6; color:white }
+.orange { background:#f59e0b; color:white }
+.pink { background:#ec4899; color:white }
+.indigo { background:#6366f1; color:white }
+
+/* ===== WHITE BOX ===== */
+.white {
+  background: white;
+  color: black;
+}
+.white .icon {
+  background: #f0f0f0;
+  color: #111;
+}
+.white span {
+  background: rgba(0,0,0,.08);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 18px;
+  color: #555;
+}
