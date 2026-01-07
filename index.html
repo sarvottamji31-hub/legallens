@@ -10,81 +10,36 @@
 </<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 >
 <body>
-
 <header class="topbar">
-  <div class="brand">
-    <span class="logo">⚖️</span>
-    <h1>LegalLens</h1>
-  </div>
-  <button class="menu">☰</button>
+  <div class="brand">⚖️ <strong>LegalLens</strong></div>
 </header>
-
-<section class="exam-track">
-  <div class="exam-card green">
-    <h3>Judicial Services</h3>
-    <p class="days">200 Days Left</p>
-    <span>Prelims • July 2026</span>
-  </div>
-  <div class="exam-card red">
-    <h3>APP / Prosecution</h3>
-    <p class="days">4 Days Left</p>
-    <span>Prelims • Jan 2026</span>
-  </div>
-  <div class="exam-card blue">
-    <h3>Law Officer</h3>
-    <p class="days">28 Days Left</p>
-    <span>Exam • Feb 2026</span>
-  </div>
-</section>
 
 <section class="hero-banner">
   <h2>Your Daily Lens Into Law</h2>
-  <p>Bare Acts • Judgments • Legal News • Exam Prep</p>
-  <button>Start Learning</button>
+  <p>Bare Acts • Judgments • MCQs • PYQs • Exams</p>
+</section>
+
+<section class="search-box">
+  <input id="searchInput" placeholder="Search laws, cases, exams..." />
 </section>
 
 <section class="features">
-  <div class="feature">
-    <a href="bareacts.html">📘 Statutory Laws</a>
-  </div>
-
-  <div class="feature">
-    <a href="judgments.html">⚖️ Case Laws</a>
-  </div>
-
-  <div class="feature">
-    📰 Legal News
-  </div>
-
-  <div class="feature">
-    🧠 Legal Concepts
-  </div>
-
-  <div class="feature">
-    📑 Exam Syllabus
-  </div>
-
-  <div class="feature">
-    📝 Practice Tests
-  </div>
+  <div class="feature"><a href="bareacts.html">📘 Statutory Laws</a></div>
+  <div class="feature"><a href="judgments.html">⚖️ Case Laws</a></div>
+  <div class="feature"><a href="mcqs.html">📝 MCQ Bank</a></div>
+  <div class="feature"><a href="pyqs.html">📑 PYQs</a></div>
 </section>
 
+<footer>© 2026 LegalLens</footer>
 
-<section class="info-strip">
-  <h3>Daily Legal Current Affairs</h3>
-  <p>Curated updates for judiciary & law exams</p>
-</section>
-
-<footer>
-  © 2026 LegalLens • Built for Law Aspirants
-</footer>
- 
-
-  <script src="script.js"></script><script>
+<script src="script.js"></script>
+<script>
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("service-worker.js");
 }
 </script>
+
+
 
 </body>
 </html>
