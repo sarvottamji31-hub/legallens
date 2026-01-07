@@ -1,73 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>MCQ Bank | LegalLens</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header class="topbar">
-  <div class="brand">⚖️ <strong>LegalLens</strong></div>
-</header>
-
-<!-- Hero -->
-<section class="mcq-hero">
-  <h1>MCQ Bank</h1>
-  <p>Subject-wise practice for smart preparation</p>
+<section class="inner-hero">
+  <h1>Constitution MCQ Test</h1>
 </section>
 
-<!-- Search -->
-<section class="search-box">
-  <input placeholder="Search subject (IPC, Constitution, CrPC…)" />
+<section class="mcq-options">
+  <div class="mcq-option" onclick="check(this,false)">Property</div>
+  <div class="mcq-option" onclick="check(this,true)">Life & Liberty</div>
+  <div class="mcq-option" onclick="check(this,false)">Trade</div>
 </section>
 
-<!-- MCQ Subjects -->
-<section class="mcq-grid">
-
-  <div class="mcq-card ipc">
-    <h3>Indian Penal Code</h3>
-    <p>Offences & punishments</p>
-    <span>500+ MCQs</span>
-  </div>
-
-  <div class="mcq-card constitution">
-    <h3>Constitution of India</h3>
-    <p>Articles, schedules & doctrines</p>
-    <span>400+ MCQs</span>
-  </div>
-
-  <div class="mcq-card crpc">
-    <h3>Criminal Procedure Code</h3>
-    <p>Investigation & trial</p>
-    <span>300+ MCQs</span>
-  </div>
-
-  <div class="mcq-card evidence">
-    <h3>Indian Evidence Act</h3>
-    <p>Evidence & burden of proof</p>
-    <span>250+ MCQs</span>
-  </div>
-
-  <div class="mcq-card contract">
-    <h3>Contract Act</h3>
-    <p>Agreements & obligations</p>
-    <span>200+ MCQs</span>
-  </div>
-
-  <div class="mcq-card misc">
-    <h3>Miscellaneous Laws</h3>
-    <p>Family, labour & special laws</p>
-    <span>150+ MCQs</span>
-  </div>
-
-</section>
-
-<footer>
-  © 2026 LegalLens • Practice Smarter
-</footer>
-
-</body>
-</html>
+<script>
+function check(el, correct){
+  if(correct){
+    el.classList.add("correct");
+  } else {
+    el.classList.add("wrong");
+  }
+}
+</script>
