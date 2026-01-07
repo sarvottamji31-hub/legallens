@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<<link rel="stylesheet" href="./style.css">
->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LegalLens – Legal Education Platform</title>
-  <meta name="description" content="LegalLens is a legal education and judiciary exam preparation platform for law students in India." />
-  <link rel="stylesheet" href="style.css" />
-</<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
->
+<head>
+<meta charset="UTF-8">
+<title>LegalLens</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="LegalLens – Legal education platform for law students and judiciary aspirants.">
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+
 <body>
+
 <header class="topbar">
-  <div class="brand">
-    <span class="logo">⚖️</span>
-    <h1>LegalLens</h1>
-  </div>
-  <button onclick="toggleDark()" class="dark-btn">🌙</button>
+  <div class="brand">⚖️ <strong>LegalLens</strong></div>
+  <button class="dark-btn" onclick="toggleDark()">🌙</button>
 </header>
 
-<!-- Exam Tracker -->
 <section class="exam-track">
   <div class="exam-card green">
     <h3>Judicial Services</h3>
     <p class="days">200 Days Left</p>
-    <span>Prelims • July 2026</span>
+    <span>July 2026</span>
   </div>
   <div class="exam-card red">
     <h3>APP / Prosecution</h3>
@@ -37,19 +34,16 @@
   </div>
 </section>
 
-<!-- Hero -->
 <section class="hero-banner">
   <h2>Your Daily Lens Into Law</h2>
   <p>Bare Acts • Judgments • MCQs • PYQs • Exams</p>
   <button>Start Learning</button>
 </section>
 
-<!-- Search -->
 <section class="search-box">
   <input id="searchInput" placeholder="Search laws, cases, exams..." />
 </section>
 
-<!-- Features -->
 <section class="features">
   <div class="feature"><a href="bareacts.html">📘 Statutory Laws</a></div>
   <div class="feature"><a href="judgments.html">⚖️ Case Laws</a></div>
@@ -60,24 +54,13 @@
   <div class="feature"><a href="login.html">🔐 Login</a></div>
 </section>
 
-<footer>
-  © 2026 LegalLens • Built for Law Aspirants
-</footer>
+<footer>© 2026 LegalLens</footer>
 
 <script src="script.js"></script>
-
-
-
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+}
+</script>
 </body>
 </html>
-<p style="opacity:0.8;">See the Law Clearly</p>
-<section style="padding:20px;">
-  <input id="searchInput" type="text" placeholder="Search laws, cases, exams..."
-  style="width:100%;padding:14px;border-radius:12px;border:1px solid #ccc;">
-</section>
-<div class="feature"><a href="bareacts.html">📘 Statutory Laws</a></div>
-<div class="feature"><a href="judgments.html">⚖️ Case Laws</a></div>
-<div class="feature"><a href="mcqs.html">📝 MCQ Bank</a></div>
-<div class="feature"><a href="pyqs.html">📑 PYQs</a></div>
-<link rel="manifest" href="manifest.json">
-<button onclick="toggleDark()" style="float:right">🌙</button>
