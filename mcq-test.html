@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MCQ Test</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero-banner">
+<h2>Constitution MCQ Test</h2>
+</section>
+
+<div class="features">
+<button onclick="check(this,false)">Property</button>
+<button onclick="check(this,true)">Life & Liberty</button>
+<button onclick="check(this,false)">Trade</button>
+</div>
+
+<p id="result"></p>
+
+<script>
+let score=0;
+function check(btn,correct){
+ if(correct){score++;btn.style.background="#16a34a";}
+ else{btn.style.background="#dc2626";}
+ document.getElementById("result").innerText="Score: "+score;
+}
+</script>
+
+</body>
+</html>
