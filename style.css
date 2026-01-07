@@ -101,3 +101,16 @@ footer {
 }
 
  
+.dark {
+  background: #0b1220;
+  color: #e5e7eb;
+}
+.dark .feature,
+.dark .list-card {
+  background: #111827;
+  color: #e5e7eb;
+}
+.dark footer,
+.dark .topbar {
+  background: #020617;
+}
