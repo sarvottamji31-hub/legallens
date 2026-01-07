@@ -11,33 +11,60 @@
 >
 <body>
 <header class="topbar">
-  <div class="brand">⚖️ <strong>LegalLens</strong></div>
+  <div class="brand">
+    <span class="logo">⚖️</span>
+    <h1>LegalLens</h1>
+  </div>
+  <button onclick="toggleDark()" class="dark-btn">🌙</button>
 </header>
 
+<!-- Exam Tracker -->
+<section class="exam-track">
+  <div class="exam-card green">
+    <h3>Judicial Services</h3>
+    <p class="days">200 Days Left</p>
+    <span>Prelims • July 2026</span>
+  </div>
+  <div class="exam-card red">
+    <h3>APP / Prosecution</h3>
+    <p class="days">4 Days Left</p>
+    <span>Jan 2026</span>
+  </div>
+  <div class="exam-card blue">
+    <h3>Law Officer</h3>
+    <p class="days">28 Days Left</p>
+    <span>Feb 2026</span>
+  </div>
+</section>
+
+<!-- Hero -->
 <section class="hero-banner">
   <h2>Your Daily Lens Into Law</h2>
   <p>Bare Acts • Judgments • MCQs • PYQs • Exams</p>
+  <button>Start Learning</button>
 </section>
 
+<!-- Search -->
 <section class="search-box">
   <input id="searchInput" placeholder="Search laws, cases, exams..." />
 </section>
 
+<!-- Features -->
 <section class="features">
   <div class="feature"><a href="bareacts.html">📘 Statutory Laws</a></div>
   <div class="feature"><a href="judgments.html">⚖️ Case Laws</a></div>
   <div class="feature"><a href="mcqs.html">📝 MCQ Bank</a></div>
+  <div class="feature"><a href="mcq-test.html">🧪 Take Test</a></div>
   <div class="feature"><a href="pyqs.html">📑 PYQs</a></div>
+  <div class="feature"><a href="courses.html">💼 Courses</a></div>
+  <div class="feature"><a href="login.html">🔐 Login</a></div>
 </section>
 
-<footer>© 2026 LegalLens</footer>
+<footer>
+  © 2026 LegalLens • Built for Law Aspirants
+</footer>
 
 <script src="script.js"></script>
-<script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("service-worker.js");
-}
-</script>
 
 
 
