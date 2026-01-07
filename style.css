@@ -93,12 +93,11 @@ body {
 }
 
 /* Features */
-.features {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  padding: 20px;
+.feature a {
+  text-decoration: none;
+  color: inherit;
 }
+
 
 .feature {
   background: white;
