@@ -1,70 +1,137 @@
-body {
-  font-family: 'Inter', sans-serif;
+* {
+  box-sizing: border-box;
 }
- 
 
-header {
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+/* Top Bar */
+.topbar {
   background: #0f2a44;
   color: white;
-  padding: 20px;
+  padding: 14px 18px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
-.hero {
-  padding: 60px 20px;
-  background: linear-gradient(135deg, #1a73e8, #0f2a44);
-  color: white;
-  border-radius: 0 0 30px 30px;
+.brand {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
-  
+.brand h1 {
+  font-size: 20px;
+  margin: 0;
+}
 
-
-button {
-  background: #1a73e8;
-  color: white;
+.menu {
+  background: none;
   border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
-  cursor: pointer;
+  color: white;
+  font-size: 22px;
 }
 
+/* Exam Tracker */
+.exam-track {
+  display: flex;
+  gap: 14px;
+  padding: 18px;
+  overflow-x: auto;
+}
+
+.exam-card {
+  min-width: 180px;
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.exam-card h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.exam-card .days {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+.green .days { color: #16a34a; }
+.red .days { color: #dc2626; }
+.blue .days { color: #2563eb; }
+
+/* Hero Banner */
+.hero-banner {
+  margin: 20px;
+  padding: 40px 20px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #2563eb, #0f2a44);
+  color: white;
+  text-align: center;
+}
+
+.hero-banner h2 {
+  margin: 0 0 10px;
+}
+
+.hero-banner button {
+  margin-top: 14px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: #0f2a44;
+  font-weight: 600;
+}
+
+/* Features */
 .features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-  padding: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 20px;
 }
 
-.features div {
+.feature {
   background: white;
-  padding: 25px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border-radius: 18px;
+  padding: 24px;
+  text-align: center;
   font-weight: 600;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
   transition: transform 0.3s ease;
 }
 
-.features div:hover {
+.feature:hover {
   transform: translateY(-6px);
 }
 
+/* Info Strip */
+.info-strip {
+  margin: 20px;
+  padding: 24px;
+  background: #e0f2fe;
+  border-radius: 18px;
+  text-align: center;
+}
 
+/* Footer */
 footer {
   background: #0f2a44;
   color: white;
-  padding: 20px;
+  text-align: center;
+  padding: 18px;
+  margin-top: 30px;
 }
-section {
-  max-width: 1000px;
-  margin: auto;
-}
-h2 {
-  margin-top: 50px;
-  font-weight: 700;
-}
+
 @media (max-width: 600px) {
   .hero {
     padding: 40px 15px;
