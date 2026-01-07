@@ -1,40 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>MCQ Test</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+<header class="topbar">⚖️ LegalLens</header>
 
-<section class="hero-banner">
-<h2>Constitution MCQ Test</h2>
+<section class="box hero orange">
+  <h1>Take Test</h1>
 </section>
 
-<div class="features">
-<button onclick="check(this,false)">Property</button>
-<button onclick="check(this,true)">Life & Liberty</button>
-<button onclick="check(this,false)">Trade</button>
-</div>
-
-<p id="result"></p>
-
-<script>
-let score=0;
-function check(btn,correct){
- if(correct){score++;btn.style.background="#16a34a";}
- else{btn.style.background="#dc2626";}
- document.getElementById("result").innerText="Score: "+score;
-}
-</script>
-
-</body>
-</html>
-<section class="funky-hero">
-  <h1>Constitution MCQ Test</h1>
-</section>
-
-<section class="simple-list">
-  <div class="simple-item">Property</div>
-  <div class="simple-item">Life & Liberty</div>
-  <div class="simple-item">Trade</div>
+<section>
+  <div class="box white"><span class="icon big">🧪</span>Mock Test</div>
+  <div class="box white"><span class="icon big">⏱️</span>Timed Test</div>
 </section>
