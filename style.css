@@ -210,3 +210,66 @@ footer {
 .act-card:hover, .cat:hover {
   transform: translateY(-6px) scale(1.02);
 }
+/* MCQ Hero */
+.mcq-hero {
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #ec4899, #8b5cf6);
+  border-radius: 0 0 40px 40px;
+}
+
+/* MCQ Grid */
+.mcq-grid {
+  padding: 24px;
+  display: grid;
+  gap: 18px;
+}
+
+/* MCQ Cards */
+.mcq-card {
+  padding: 24px;
+  border-radius: 22px;
+  color: white;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.mcq-card span {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 14px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.mcq-card:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+/* Color Themes */
+.ipc {
+  background: linear-gradient(135deg, #ef4444, #f97316);
+}
+
+.constitution {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.crpc {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.evidence {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+.contract {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.misc {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+}
