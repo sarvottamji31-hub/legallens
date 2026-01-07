@@ -129,3 +129,84 @@ footer {
  from {opacity:0; transform:translateY(20px);}
  to {opacity:1; transform:none;}
 }
+/* Statutory Hero */
+.stat-hero {
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg,#7c3aed,#2563eb);
+  border-radius: 0 0 40px 40px;
+}
+
+/* Categories */
+.stat-categories {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 14px;
+  padding: 20px;
+}
+
+.cat {
+  padding: 18px;
+  border-radius: 16px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+.criminal { background:#ef4444; }
+.civil { background:#3b82f6; }
+.constitution { background:#8b5cf6; }
+.commercial { background:#10b981; }
+.labour { background:#f59e0b; }
+.family { background:#ec4899; }
+
+/* Act Cards */
+.stat-acts {
+  padding: 20px;
+  display: grid;
+  gap: 18px;
+}
+
+.act-card {
+  padding: 22px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.act-card span {
+  display: inline-block;
+  margin-top: 10px;
+  background: rgba(255,255,255,.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.red { background:linear-gradient(135deg,#dc2626,#ef4444); }
+.blue { background:linear-gradient(135deg,#2563eb,#3b82f6); }
+.green { background:linear-gradient(135deg,#059669,#10b981); }
+.purple { background:linear-gradient(135deg,#7c3aed,#8b5cf6); }
+
+/* Section Preview */
+.section-preview {
+  padding: 30px 20px;
+}
+
+.section-card {
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,.08);
+}
+
+/* Hover Effects */
+.act-card, .cat {
+  transition: transform .3s ease;
+}
+
+.act-card:hover, .cat:hover {
+  transform: translateY(-6px) scale(1.02);
+}
