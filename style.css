@@ -363,3 +363,20 @@ footer {
   background: #dc2626;
   color: white;
 }
+/* ===== PAGE TRANSITION ANIMATION ===== */
+
+body {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+body.page-exit {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Optional smoother effect */
+a {
+  transition: color 0.2s ease;
+}
