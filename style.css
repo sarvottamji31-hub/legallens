@@ -61,3 +61,12 @@ section {
   max-width: 1000px;
   margin: auto;
 }
+h2 {
+  margin-top: 50px;
+  font-weight: 700;
+}
+@media (max-width: 600px) {
+  .hero {
+    padding: 40px 15px;
+  }
+}
