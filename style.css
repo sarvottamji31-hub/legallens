@@ -477,3 +477,12 @@ a {
   margin-bottom: 12px;
   box-shadow: 0 6px 14px rgba(0,0,0,.08);
 }
+/* Fix for new Indian laws text visibility */
+.dark-text {
+  color: #000000;
+}
+
+.dark-text span {
+  background: rgba(0, 0, 0, 0.1);
+  color: #000000;
+}
