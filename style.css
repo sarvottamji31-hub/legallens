@@ -114,3 +114,31 @@ footer {
 .dark .topbar {
   background: #020617;
 }
+.dark {
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+.dark .exam-card,
+.dark .feature,
+.dark .list-card {
+  background: #111827;
+  color: #e5e7eb;
+}
+
+.dark .topbar,
+.dark footer {
+  background: #020617;
+}
+
+.dark .hero-banner {
+  background: linear-gradient(135deg, #1e293b, #020617);
+}
+
+.dark-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
